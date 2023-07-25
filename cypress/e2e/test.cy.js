@@ -8,7 +8,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
       cy.get('#firstName').invoke('val','Curioso')
       cy.get('#lastName').invoke('val','Chancho')
       cy.get('#email').invoke('val','coco@gmail.com')
-      cy.get('#open-text-area').invoke('val','mucha ayuda')
+      cy.get('#open-text-areaa').invoke('val','mucha ayuda')
       cy.get('input[type="file"]').selectFile('./cypress/fixtures/example.json').should(function($link){
           expect($link[0].files[0].name).to.equal('example.json')
       })
