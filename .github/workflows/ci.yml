@@ -19,3 +19,9 @@ jobs:
           name: cypress-videos
           path: cypress/videos
           if-no-files-found: ignore 
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: reporte-execution
+          path: cypress/reports/html
+          retention-days: 5
